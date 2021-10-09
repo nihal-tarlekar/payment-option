@@ -43,18 +43,13 @@
             <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
             <script>
                 var options = {
-                    "key": "rzp_test_tyF8G0w6yPwaKZ", // Enter the Key ID generated from the Dashboard
+                    "key": "rzp_test_RrRSNKG7kJ1fqm", // Enter the Key ID generated from the Dashboard
                     "amount": "100", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
                     "currency": "INR",
                     "name": "International Aviation",
                     "description": "Test Transaction",
                     "image": "http://internationalaviation.in/images/homepage/logo.png",
-                    "order_id": "order_I7C5ZLDJglg8Ak", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-                    "handler": function (response) {
-                        alert(response.razorpay_payment_id);
-                        alert(response.razorpay_order_id);
-                        alert(response.razorpay_signature)
-                    },
+                    "order_id": "order_I7F2xbERlswhxD", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
                     "prefill": {
                         "name": "",
                         "email": "",
